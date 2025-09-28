@@ -1,7 +1,6 @@
 'use server';
 
 import { z } from 'zod';
-import { generateSmartCTAs, GenerateSmartCTAsInput } from '@/ai/flows/generate-smart-ctas';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -42,34 +41,4 @@ export async function submitContactForm(
   console.log('New Contact Form Submission:', validatedFields.data);
 
   return { message: 'success' };
-}
-
-
-export type CtaGeneratorState = {
-  message: string;
-  data?: {
-    suggestedCTATexts: string[];
-    rationale: string;
-  }
-  errors?: any;
-};
-
-export async function generateCtaAction(
-  prevState: CtaGeneratorState,
-  formData: FormData
-): Promise<CtaGeneratorState> {
-  const input: GenerateSmartCTAsInput = {
-    currentCTAText: formData.get('currentCTAText') as string,
-    landingPageSegment: formData.get('landingPageSegment') as string,
-    conversionRate: parseFloat(formData.get('conversionRate') as string),
-    abTestingData: formData.get('abTestingData') as string,
-  };
-
-  try {
-    const result = await generateSmartCTAs(input);
-    return { message: 'success', data: result };
-  } catch (e) {
-    console.error(e);
-    return { message: 'error', errors: 'An unexpected error occurred.' };
-  }
 }

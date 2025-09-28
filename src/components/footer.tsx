@@ -51,9 +51,6 @@ const Footer = () => {
           </div>
           <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center text-sm text-primary-foreground/60">
             <p>&copy; {new Date().getFullYear()} Siento44 Construcciones. Todos los derechos reservados.</p>
-             <p className="mt-2">
-                <Link href="/dashboard" className="hover:text-accent">Admin Dashboard</Link>
-            </p>
           </div>
         </div>
       </footer>
