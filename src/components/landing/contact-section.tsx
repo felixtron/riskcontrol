@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useActionState } from 'react';
+import { useEffect } from 'react';
+import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
 import { submitContactForm, ContactFormState } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
@@ -9,7 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
-import { Loader2, Phone, MessageCircle } from 'lucide-react';
+import { Loader2, Phone, MessageCircle, Mail } from 'lucide-react';
 
 const initialState: ContactFormState = {
   message: '',
@@ -50,9 +51,9 @@ export default function ContactSection() {
     <section id="contact" className="w-full py-20 lg:py-32 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Proyecte su Éxito con Siento44</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">Contacto</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            ¿Listo para comenzar? Contáctenos para una consulta y cotización honesta y transparente.
+            Atendemos proyectos en todo México. ¿Listo para comenzar? Contáctenos para una consulta.
           </p>
         </div>
 
@@ -98,6 +99,15 @@ export default function ContactSection() {
                         <div>
                             <h4 className="font-semibold">Teléfono</h4>
                             <a href="tel:5528976334" className="text-muted-foreground hover:text-primary">55 2897 6334</a>
+                        </div>
+                    </div>
+                     <div className="flex items-start gap-4">
+                        <div className="bg-primary text-primary-foreground p-3 rounded-md">
+                            <Mail />
+                        </div>
+                        <div>
+                            <h4 className="font-semibold">Email</h4>
+                            <a href="mailto:contacto@siento44.com" className="text-muted-foreground hover:text-primary">contacto@siento44.com</a>
                         </div>
                     </div>
                      <div className="flex items-start gap-4">

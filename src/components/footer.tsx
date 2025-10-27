@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, Phone, Linkedin, Facebook } from 'lucide-react';
+import { MessageCircle, Phone, Linkedin, Facebook, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
                 <Logo className="w-40 h-auto" />
               </Link>
               <p className="text-sm text-primary-foreground/80">
-                10 años de experiencia construyendo confianza.
+                Confianza - Tranquilidad - Profesionalismo
               </p>
             </div>
             <div>
@@ -24,6 +24,12 @@ const Footer = () => {
                   <a href="tel:5528976334" className="flex items-center gap-2 hover:text-accent transition-colors">
                     <Phone size={16} />
                     <span>55 2897 6334</span>
+                  </a>
+                </li>
+                 <li>
+                  <a href="mailto:contacto@siento44.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                    <Mail size={16} />
+                    <span>contacto@siento44.com</span>
                   </a>
                 </li>
                 <li>
@@ -48,6 +54,7 @@ const Footer = () => {
           </div>
           <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center text-sm text-primary-foreground/60">
             <p>&copy; {new Date().getFullYear()} Siento44 Construcciones. Todos los derechos reservados.</p>
+            <p>Atendemos proyectos en todo México</p>
           </div>
         </div>
       </footer>

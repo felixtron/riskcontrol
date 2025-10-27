@@ -5,9 +5,9 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'ConstructLead MX',
+  title: 'Siento44 Construcciones',
   description:
-    'Siento44 Construcciones: 10 Años de Experiencia Construyendo Confianza.',
+    'En Siento44 Construcciones, creemos que la confianza se construye con hechos. Más de 10 años de experiencia en el sector de la construcción a nivel nacional.',
 };
 
 export default function RootLayout({

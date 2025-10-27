@@ -18,17 +18,17 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 container mx-auto px-6 max-w-4xl">
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
-          Siento44 Construcciones: La Nueva Cara de la Construcción Eficiente.
+          SIENTO44 CONSTRUCCIONES
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-white/90">
-          10 Años de Experiencia Construyendo Confianza.
+        <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
+          En Siento44 Construcciones, creemos que la confianza se construye con hechos.
         </p>
-        <p className="mt-6 text-base md:text-lg max-w-3xl mx-auto">
-          Transformamos su visión de Obra Civil, Residencial, Comercial o Industrial en proyectos ejecutados con honestidad, tecnología y cumplimiento normativo.
+        <p className="mt-4 text-base md:text-lg">
+          Somos una empresa joven en imagen, pero con más de 10 años de experiencia en el sector de la construcción a nivel nacional. Nuestra renovación representa una nueva etapa: más dinámica, más tecnológica y con una visión enfocada en ofrecer soluciones modernas, seguras y sostenibles para cada proyecto.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg" asChild>
-            <a href="#contact">Solicite una Cotización Honesta y Transparente</a>
+            <a href="#contact">Solicite una Cotización</a>
           </Button>
           <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary" asChild>
             <a href="#services">

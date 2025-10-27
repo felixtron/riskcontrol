@@ -12,7 +12,8 @@ const Header = () => {
         </Link>
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           <Link href="#services" className="hover:text-primary transition-colors">Servicios</Link>
-          <Link href="#credibility" className="hover:text-primary transition-colors">Nosotros</Link>
+          <Link href="#credibility" className="hover:text-primary transition-colors">Compromiso</Link>
+          <Link href="#why-choose-us" className="hover:text-primary transition-colors">Nosotros</Link>
           <Link href="#contact" className="hover:text-primary transition-colors">Contacto</Link>
         </nav>
         <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
