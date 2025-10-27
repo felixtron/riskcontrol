@@ -5,7 +5,7 @@ export function Logo({ className, ...props }: React.HTMLAttributes<HTMLDivElemen
   return (
     <div className={cn('relative', className)} {...props}>
       <Image
-        src="https://storage.googleapis.com/source-buckets/user-project-3522a466-9d32-4464-8395-5f694b29b359/s44-logo.png"
+        src="https://prosuite.mx/LogoS44.png"
         alt="Siento44 Construcciones Logo"
         width={160}
         height={100}
