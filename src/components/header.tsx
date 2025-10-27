@@ -6,12 +6,9 @@ import { ArrowRight } from 'lucide-react';
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
-      <div className="container mx-auto flex h-16 items-center justify-between px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Logo className="w-8 h-8 text-primary" />
-          <span className="text-lg font-bold font-headline hidden sm:inline-block">
-            Siento44
-          </span>
+          <Logo className="w-28 h-auto" />
         </Link>
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           <Link href="#services" className="hover:text-primary transition-colors">Servicios</Link>

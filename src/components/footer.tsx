@@ -11,10 +11,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-start">
               <Link href="/" className="flex items-center gap-2 mb-4">
-                <Logo className="w-10 h-10 text-accent" />
-                <span className="text-xl font-bold font-headline">
-                  Siento44 Construcciones
-                </span>
+                <Logo className="w-40 h-auto" />
               </Link>
               <p className="text-sm text-primary-foreground/80">
                 10 años de experiencia construyendo confianza.

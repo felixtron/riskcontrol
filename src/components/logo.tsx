@@ -1,23 +1,17 @@
-import { cn } from "@/lib/utils";
+import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
-export function Logo({ className, ...props }: React.SVGProps<SVGSVGElement>) {
+export function Logo({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={cn("w-6 h-6", className)}
-      {...props}
-    >
-      <title>Siento44 Logo</title>
-      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-      <line x1="4" y1="22" x2="4" y2="15" />
-      <path d="M20 22V10" />
-      <path d="M12 22V12" />
-    </svg>
+    <div className={cn('relative', className)} {...props}>
+      <Image
+        src="https://storage.googleapis.com/source-buckets/user-project-3522a466-9d32-4464-8395-5f694b29b359/s44-logo.png"
+        alt="Siento44 Construcciones Logo"
+        width={160}
+        height={100}
+        className="object-contain"
+        priority
+      />
+    </div>
   );
 }
