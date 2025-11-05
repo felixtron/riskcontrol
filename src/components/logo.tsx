@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
-export function Logo({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
+type LogoProps = Omit<React.HTMLAttributes<HTMLDivElement>, 'children'>;
+
+export function Logo({ className, ...props }: LogoProps) {
   return (
     <div className={cn('relative', className)} {...props}>
       <Image
