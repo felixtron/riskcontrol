@@ -21,7 +21,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Logo className="w-28 md:w-40 h-auto" />
+          <Logo className="w-28 md:w-36 h-auto" />
         </Link>
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           {navLinks.map((link) => (
@@ -57,7 +57,7 @@ const Header = () => {
               <div className="flex flex-col h-full py-6">
                 <div className="px-6 mb-8">
                   <Link href="/" onClick={() => setIsOpen(false)}>
-                    <Logo className="w-40 h-auto" />
+                    <Logo className="w-36 h-auto" />
                   </Link>
                 </div>
                 <nav className="flex flex-col gap-4 px-6">

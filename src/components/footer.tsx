@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-start">
               <Link href="/" className="flex items-center gap-2 mb-4">
-                <Logo className="w-40 h-auto" />
+                <Logo className="w-36 h-auto" />
               </Link>
               <p className="text-sm text-primary-foreground/80">
                 Confianza - Tranquilidad - Profesionalismo
