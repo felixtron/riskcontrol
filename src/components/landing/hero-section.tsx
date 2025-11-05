@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImagesById } from '@/lib/placeholder-images';
@@ -5,16 +8,30 @@ import { ArrowDown } from 'lucide-react';
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImagesById['hero-image'];
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
-      <Image
-        src={heroImage.imageUrl}
-        alt={heroImage.description}
-        fill
-        className="object-cover"
-        priority
-        data-ai-hint={heroImage.imageHint}
-      />
+    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+      <div
+        className="absolute inset-0 w-full h-full"
+        style={{ transform: `translateY(${offsetY * 0.4}px)` }}
+      >
+        <Image
+          src={heroImage.imageUrl}
+          alt={heroImage.description}
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint={heroImage.imageHint}
+        />
+      </div>
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 container mx-auto px-6 max-w-4xl">
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
