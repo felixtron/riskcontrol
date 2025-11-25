@@ -41,7 +41,7 @@ export default function HeroSection() {
           En Siento44 Construcciones, creemos que la confianza se construye con hechos.
         </p>
         <p className="mt-4 text-base md:text-lg">
-          Somos una empresa joven en imagen, pero con más de 10 años de experiencia en el sector de la construcción a nivel nacional. Nuestra renovación representa una nueva etapa: más dinámica, más tecnológica y con una visión enfocada en ofrecer soluciones modernas, seguras y sostenibles para cada proyecto.
+          Más de 10 años transformando la construcción con soluciones sostenibles y tecnología de vanguardia.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg" asChild>
