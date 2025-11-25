@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">¿Por qué Elegirnos?</h2>
            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-            Nuestra trayectoria y compromiso son su mejor garantía.
+            Nuestra trayectoria y compromiso son su mejor garantía. Siento44 Construcciones nace como una empresa nueva, impulsada por un equipo con más de 10 años de trayectoria en construcción a nivel nacional.
           </p>
         </div>
 
