@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: 'Siento44 Construcciones',
   description:
     'En Siento44 Construcciones, creemos que la confianza se construye con hechos. Más de 10 años de experiencia en el sector de la construcción a nivel nacional.',
+  icons: {
+    icon: 'https://i.postimg.cc/zX250WAb/s44-logo.png',
+  },
 };
 
 export default function RootLayout({

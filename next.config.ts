@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         hostname: 'blog.ucsp.edu.pe',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.postimg.cc',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
