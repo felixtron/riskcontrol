@@ -13,9 +13,9 @@ Si ves el mensaje `nothing to commit, working tree clean`, asegúrate de seguir 
    ```
 3. **Agrega el repositorio remoto** (reemplaza con tu URL si es diferente):
    ```bash
-   git remote add origin https://github.com/felixtron/riskcontrol.git
+   git remote add origin https://github.com/felixtron/siento44.git
    ```
-4. **IMPORTANTE: Prepara los archivos**:
+4. **IMPORTANTE: Prepara los archivos (Este paso soluciona el error que tuviste)**:
    ```bash
    git add .
    ```
