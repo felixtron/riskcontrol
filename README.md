@@ -4,7 +4,7 @@ Este es el sitio web oficial de Siento44 Construcciones, desarrollado con Next.j
 
 ## Cómo subir este proyecto a tu repositorio de GitHub
 
-Para conectar este código con tu repositorio en `https://github.com/felixtron/siento44.git`, sigue estos pasos en tu terminal local:
+Para conectar este código con tu repositorio en `https://github.com/felixtron/riskcontrol.git`, sigue estos pasos en tu terminal local:
 
 1. **Descarga el código** de este proyecto a tu computadora.
 2. **Abre una terminal** en la carpeta del proyecto.
@@ -14,7 +14,7 @@ Para conectar este código con tu repositorio en `https://github.com/felixtron/s
    ```
 4. **Agrega el repositorio remoto**:
    ```bash
-   git remote add origin https://github.com/felixtron/siento44.git
+   git remote add origin https://github.com/felixtron/riskcontrol.git
    ```
 5. **Agrega todos los archivos**:
    ```bash
